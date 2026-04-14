@@ -94,7 +94,6 @@ if st.button("🔍 Predict"):
 
     raw_probabilities = model.predict_proba(input_data)
     probabilities = np.asarray(raw_probabilities).reshape(-1)
-
     labels = {
         1: "Normal",
         2: "Overweight",
